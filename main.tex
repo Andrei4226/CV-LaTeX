@@ -1,0 +1,134 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+
+\definecolor{mediumgray}{gray}{0.3}
+\definecolor{lightblue}{RGB}{112, 160, 224}
+
+\geometry{left=0.5cm, top=0.8cm, right=1cm, bottom=1cm, footskip=.5cm}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\newsection}[2]{\Large\textbf{\textcolor{#2}{#1}} \hrulefill\normalsize} % title, colour
+
+\newcommand{\newsubsection}[4]{\normalsize\textbf{\textcolor{#3}{#1}} \hfill\small\textcolor{#4}{#2}\normalsize} %title, details, colourTitle, colourDetails
+
+\newcommand{\customitem}{\vspace{-1.5mm}\item}
+
+\newcommand{\newskill}[3]{\normalsize\textbf{\textcolor{#2}{#1}}\quad\small#3\normalsize} % skillName, colour, details
+
+\newcommand{\newaward}[6]{\small\textcolor{#6}{#1}\quad\textbf{\textcolor{#3}{#2}}, \textbf{\textcolor{#6}{#4}}\hfill\textcolor{#6}{#5}\normalsize} % year, award, awardColor, competition, details, yearCompetitionAndDetailsColour
+
+\newenvironment{cvsection}[2] % title, colour
+{
+    \newsection{#1}{#2}
+    \vspace{1mm}
+    \small
+    
+}
+{
+    \vspace{1mm}
+}
+
+\newenvironment{newentry}[5] % title, details, colourTitle, colourDetails, aditionalDetails
+{
+    \newsubsection{#1}{#2}{#3}{#4}
+    \small
+    
+    \textcolor{#4}{#5}
+    \begin{itemize}
+        \small
+}
+{
+    \end{itemize}
+}
+
+\begin{document}
+
+\begin{center}
+    \huge
+    \textbf{Tănasă Andrei-Robert}
+    
+    \footnotesize
+    \begin{tabular}{c|c|c|c}
+        \faMobilePhone\ (+40) 755 931 656 & \href{mailto:tanaseandrei333@gmail.com}{\textcolor{darkgray}{\faEnvelope\ tanaseandrei333@gmail.com}} & \href{https://github.com/Andrei4226}{\textcolor{darkgray}{\faGithub\ Andrei4226}} & \href{https://www.linkedin.com/in/andrei-tănasă-748b72243/}{\textcolor{darkgray}{\faLinkedin\ Tănasă Andrei-Robert}}
+    \end{tabular}
+\end{center}
+
+\begin{cvsection}{Education}{black}
+    \begin{newentry}{The Bucharest University of Economic Studies - ASE Bucuresti}{2021 -- 2024}{darkgray}{mediumgray}{\textbf{Computer Science} -- Economic Informatics}
+       
+    \end{newentry}
+    
+    \begin{newentry}{``Emil Botta'' National High School}{2017 -- 2021}{darkgray}{mediumgray}{\vspace{-4mm}}
+        \customitem \textbf{Romanian Baccalaureate} -- 9.50 in Informatics, 9.75 in Mathematics, 8.40 in Romanian Literature and Language (out of 10)
+    \end{newentry}
+    
+\end{cvsection}
+
+\begin{cvsection}{Skills}{black}
+    \newskill{Programming:}{darkgray}{C/C++, OOP in C++, HTML, CSS
+    , ASM x86, LaTeX}
+    
+    \newskill{Technologies:}{darkgray}{Jira, VideoScribe}
+    
+    \newskill{Languages:}{darkgray}{English: B2(Professional Working Proficiency), Romanian(native)}
+    
+\end{cvsection}
+
+{\vspace{1mm}}
+\begin{cvsection}{Work Experience}{black}
+     \begin{newentry}{{\textcolor{darkgray}{Novice}}}{\vspace{-1mm}}
+    {\vspace{2mm}}
+    \begin {I still have no \textbf{work experience.}}.
+    {\vspace{-5mm}}
+    \end{newentry}
+\end{cvsection}
+    
+    {\vspace{-1mm}}
+\begin{cvsection}{Projects}{black}
+
+    \begin{newentry}{\href{https://github.com/Andrei4226/Istoria-muzicii}{\textcolor{darkgray}{ History of Music \faExternalLink}}}{Mar 2021}{darkgray}{mediumgray}{\vspace{-3mm}}
+        \customitem The project was created with HTML and CSS. I used tables to align the elements and it contains a menu, copyright bar, banner+logo, audio and video elements, anchors, page associations, buttons, feedback form with various boxes, contact window, and questionnaire.
+        \customitem The theme of the project aims at the evolution of musical genres and festivals, as well as the approach to various world records.
+    \end{newentry}
+
+    \begin{newentry}{\href{https://github.com/Andrei4226/Treasure-Hunt}{\textcolor{darkgray}{ Astro - Journey \faExternalLink}}}{Oct 2021}{darkgray}{mediumgray}{\vspace{-3mm}}
+        \customitem Project developed in \textbf{Visual Studio}, code is written in \textbf{HTML/CSS}, where I tried to create a website for a treasure hunt.
+    \end{newentry}
+
+    \begin{newentry}{\href{https://github.com/Andrei4226/Crystal-Clear}{\textcolor{darkgray}{A website for a personal development student event \faExternalLink}}}{Oct 2022}{darkgray}{mediumgray}{\vspace{-3mm}}
+        \customitem The site was created in \textbf{Visual Studio}. This was a program in \textbf{HTML/CSS} and contains: registration button that connects to a Google form and buttons for social networks.
+    \end{newentry}
+
+    \begin{newentry}{\href{https://github.com/Andrei4226/CV}{\textcolor{darkgray}{CV site \faExternalLink}}}{Sep 2022}{darkgray}{mediumgray}{\vspace{-3mm}}
+        \customitem Project written in \textbf{Atom}, the site is to be improved, currently it is a \textbf{prototype}.
+    \end{newentry}
+    
+    \begin{newentry}{\href{https://github.com/Andrei4226/Test-Cases}{\textcolor{darkgray}{Test Cases\faExternalLink}}}{Sep 2022}{darkgray}{mediumgray}{\vspace{-3mm}}
+        \customitem Project written in \textbf{Jira} and it contains several \textbf{test cases} based on images from \textbf{eMAG} or \textbf{WP}.
+    \end{newentry}
+    
+    \begin{newentry}{\href{https://github.com/Andrei4226/Bug-report}{\textcolor{darkgray}{Bug Reports\faExternalLink}}}{Sep 2022 }{darkgray}{mediumgray}{\vspace{-3mm}}
+        \customitem Project written in \textbf{Jira} and it contains several \textbf{test cases} based on the reality of some sites such as: Fieni City Hall, Techirghiol City Hall etc.
+    \end{newentry}
+
+{\vspace{1mm}}
+
+\begin{cvsection}{More about me}{black}
+{\vspace{1mm}}
+ 
+    \begin{newentry}{Trainer for \href{https://www.logiscool.com/ro/}{Logiscool Romania.}}{2022 Oct}{darkgray}{mediumgray}{\vspace{-4mm}}
+    \end{newentry}
+    
+    \begin{newentry}{Junior member in the Web Development branch of \href{https://bosromania.ro/}{BOS Romania}.}{2022 Nov}{darkgray}{mediumgray}
+      
+    \end{newentry}
+    
+\end{cvsection}
+\end{cvsection}
+
+
+\end{document}
